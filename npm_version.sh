@@ -6,5 +6,8 @@ npm_version=$(npm --version 2>/dev/null || echo "Not Detected")
 # Get pnpm version  
 pnpm_version=$(pnpm -v 2>/dev/null || echo "Not Detected")
 
+# Get yarn version
+yarn_version=$(yarn --version 2>/dev/null || echo "Not Detected")
+
 # Output result
-echo "${npm_version}|${pnpm_version}"
+echo "${npm_version}|${pnpm_version}|${yarn_version}"
